@@ -1,0 +1,109 @@
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  html{
+    border: 2px;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+
+  }
+  body{
+    border: 2px;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+
+  }
+
+  .item{
+    float: left;
+    border: 2px;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    width: 6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    line-height: 2em; /* a */
+    max-height: 8em; /* a x number of line to show (ex : 2 line)  */
+    display: flex;
+    flex-direction: column;
+    min-height: 15vh;
+  }
+  .cart{
+    border: 2px;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    text-align:center;
+  }
+  .order{
+    border: 2px;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-color: black;
+    font-size: 12px;
+    text-align: center;
+  }
+  .total{
+    border: 2px;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+  }
+  .order-header{
+    display:block;
+    width: inherit;
+    height: inherit;
+  }
+  .logo{
+    width: 50px !important;
+    height: 50px !important;
+    float: left !important;
+  }
+.myValue{
+  width:50px;
+}
+.botn{
+  height: 2em;
+  float: left;
+  width: 2em;
+  z-index: 1
+}
+@media print{
+  .order{
+    font-size: 5px;
+  }
+}
+
+#feedback { font-size: 1.4em; }
+  .items .ui-selecting { background: #FECA40; }
+  .items .ui-selected { background: #F39814; color: white; }
+  .items { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+</style>

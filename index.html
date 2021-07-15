@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href="lib/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+    <title>Alexandrian Corner</title>
+  </head>
+  <body >
+
+    <main>
+
+      <div class="container themed-container">
+        <h1>Alexandrian Corner</h1>
+        <div class="row mb-3">
+
+          <div id="tabs" class="col-md-7 themed-grid-col">
+
+            <ul>
+              <li><a href="#tabs-1">Sandwiches</a></li>
+              <li><a href="#tabs-2">Drinks</a></li>
+            </ul>
+
+            <div id="tabs-1">
+
+              <ul id="sandwiches" class="items"></ul>
+
+            </div>
+
+            <div id="tabs-2">
+
+              <ul id="drinks" class="items"></ul>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-4 themed-grid-col cart" id="cart">
+                <p>cart</p>
+                <div name="order" id="order" class="order">
+                  <div class="order-header">
+                    <div>يشرفنا خدمدتكم في ركن اسكندراني
+                      <img src="logo.jpg" alt="logo" class="logo">
+                      <p id="date"></p>
+                    </div>
+
+                  </div>
+                  <table class="table table-bordered table-hover table-sm" id="order-items">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">الصنف</th>
+                        <th scope="col">السعر</th>
+                        <th scope="col" id="item-qty">الكمية</th>
+                        <th scope="col" id="row-price">الاجمالي</th>
+                      </tr>
+                    </thead>
+                    <tbody  id="order-table">
+
+                    </tbody>
+                  </table>
+                  <table class="table">
+                    <thead>
+                      <tr class="total" style="display:none">
+                        <th>Total:</th>
+                        <th>                </th>
+                        <th>                </th>
+                        <th>                </th>
+                        <th id="tot" ></th>
+                      </tr>
+                    </thead>
+                  </table>
+
+                </div>
+
+                <button type="button" name="button" id="print" style="display:none">print</button>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-ui/jquery-ui.js"></script>
+    <script src="lib/printThis/printThis.js" charset="utf-8"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+
+</html>
